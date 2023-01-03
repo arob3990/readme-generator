@@ -67,7 +67,7 @@ inquirer
 const writeAnswersToFile= (userAnswers)=>{
     const initialData = 
     `# ${userAnswers.projectTitle} 
-    \n [!License: ${userAnswers.license}](http://img.shields.io/badge/License-${userAnswers.license}-blue.svg)]
+    \n [!License: ${userAnswers.license}](https://img.shields.io/badge/License-${userAnswers.license}-blue.svg)]
     \n## Description
     \n ${userAnswers.description} 
     \n## Installation 
