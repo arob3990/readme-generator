@@ -41,7 +41,7 @@ inquirer
             type: "list",
             name: "license",
             message: "Please indicate the license type for your project",
-            choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License"]
+            choices: ["Apache_2.0", "GPLv3", "MIT"]
         },
         {
             type: "input",
@@ -56,14 +56,18 @@ inquirer
     ])
     .then((answers) => {
         console.log(answers)
-        // Use user feedback for... whatever!!
+       
         writeAnswersToFile(answers);
       })
 
 // TODO: Create a function to write README file
+
+
+
 const writeAnswersToFile= (userAnswers)=>{
     const initialData = 
     `# ${userAnswers.projectTitle} 
+    \n [!License: ${userAnswers.license}](http://img.shields.io/badge/License-${userAnswers.license}-blue.svg)]
     \n## Description
     \n ${userAnswers.description} 
     \n## Installation 
@@ -81,7 +85,7 @@ const writeAnswersToFile= (userAnswers)=>{
     \n For any questions, please email me at ${userAnswers.userEmail}`
     
     fs.writeFile(
-        `${userAnswers.projectTitle}.txt`, 
+        `${userAnswers.projectTitle}.md`, 
         initialData, 
     (error)=>error?console.log(error):console.log("success")
     )
