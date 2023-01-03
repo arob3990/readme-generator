@@ -11,6 +11,8 @@
 ## Usage
     
  This can be used by anyone looking to easily create a README.md file
+ 
+ To view the functionality watch this video: https://drive.google.com/file/d/1HezoSmmrizQLc-PsnY6FkH9RRR4KHR5C/view
     
 ## Contributing
     
