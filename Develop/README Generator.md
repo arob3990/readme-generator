@@ -26,6 +26,6 @@
     
 ## Questions
     
- Please find a link to my Github profile at github.com/arob3990/
+ Please find a link to my Github profile at https://github.com/arob3990/
     
  For any questions, please email me at alex.robertson390@gmail.com
