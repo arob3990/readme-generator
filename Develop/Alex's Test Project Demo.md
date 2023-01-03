@@ -1,6 +1,6 @@
 # Alex's Test Project Demo 
     
- [!License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
+ [!License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
     
 ## Description
     
