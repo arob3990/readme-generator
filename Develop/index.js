@@ -2,8 +2,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
-const questions = [];
 
 inquirer
     .prompt([
@@ -60,7 +58,6 @@ inquirer
         writeAnswersToFile(answers);
       })
 
-// TODO: Create a function to write README file
 
 
 
@@ -81,7 +78,7 @@ const writeAnswersToFile= (userAnswers)=>{
     \n## License
     \n ${userAnswers.license}
     \n## Questions
-    \n Please find a link to my Github profile at github.com/${userAnswers.userRepo}/
+    \n Please find a link to my Github profile at https://github.com/${userAnswers.userRepo}/
     \n For any questions, please email me at ${userAnswers.userEmail}`
     
     fs.writeFile(
@@ -91,8 +88,4 @@ const writeAnswersToFile= (userAnswers)=>{
     )
 }
 
-// TODO: Create a function to initialize app
-// function init() {}
 
-// // Function call to initialize app
-// init();
